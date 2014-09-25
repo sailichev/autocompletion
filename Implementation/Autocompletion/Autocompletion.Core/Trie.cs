@@ -1,7 +1,7 @@
 namespace Autocompletion.Core
 {
+	using System;
 	using System.Collections.Generic;
-	using System.Linq;
 
 
 	public class Trie<T>
@@ -24,13 +24,9 @@ namespace Autocompletion.Core
 			}
 		}
 
-		public void Prepare(int count)
+		public void Prepare(int resultCount = int.MaxValue, Comparer<T> comparer = null)
 		{
-			this.Prepare(count, Comparer<T>.Default);
-		}
-		public void Prepare(int count, Comparer<T> comparer)
-		{
-			Prepare(this.root, count, comparer);
+			Prepare(this.root, resultCount > 0 ? resultCount : int.MaxValue, comparer ?? Comparer<T>.Default);
 		}
 
 		public IEnumerable<T> Get(string prefix)
@@ -40,7 +36,7 @@ namespace Autocompletion.Core
 			foreach (char p in prefix)
 			{
 				if (!current.Children.ContainsKey(p))
-					return Enumerable.Empty<T>();
+					return new T[0];
 
 				current = current.Children[p];
 			}
@@ -48,23 +44,24 @@ namespace Autocompletion.Core
 			return current.Cache;
 		}
 
-
 		private static void Prepare(Node node, int count, Comparer<T> comparer)
 		{
 			foreach (var child in node.Children)
 				Prepare(child.Value, count, comparer);
 
-			node.Cache = node.Items.OrderBy(_ => _, comparer).Take(count).ToArray();
+			node.Cache = new T[Math.Min(count, node.Items.Count)];
+			node.Items.Sort(comparer);
+			node.Items.CopyTo(0, node.Cache, 0, node.Cache.Length);
 		}
 
 
 		private class Node
 		{
 			public readonly IDictionary<char, Node> Children = new Dictionary<char, Node>();
-	
-			public readonly ICollection<T> Items = new List<T>();
 
-			public T[] Cache;
+			public readonly List<T> Items = new List<T>();
+
+			public T[] Cache = new T[0];
 		}
 	}
 }
