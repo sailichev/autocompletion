@@ -66,9 +66,7 @@
 			trie.Prepare(10);
 
 			
-			var timer = new Stopwatch();
-			
-			timer.Start();
+			var timer = Stopwatch.StartNew();
 
 			foreach (var a in testPrefixData)
 				trie.Get(a);
