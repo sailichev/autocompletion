@@ -63,6 +63,10 @@
       <Project>{d209dd34-006c-4f36-a24f-7e508940fa8d}</Project>
       <Name>Autocompletion.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Autocompletion.Interfaces\Autocompletion.Interfaces.csproj">
+      <Project>{95c10720-2f21-4d8c-bec3-46f457535266}</Project>
+      <Name>Autocompletion.Interfaces</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Specification\test.in">

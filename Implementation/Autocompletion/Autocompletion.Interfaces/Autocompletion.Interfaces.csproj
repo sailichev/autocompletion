@@ -4,14 +4,13 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D209DD34-006C-4F36-A24F-7E508940FA8D}</ProjectGuid>
+    <ProjectGuid>{95C10720-2F21-4D8C-BEC3-46F457535266}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Autocompletion.Core</RootNamespace>
-    <AssemblyName>Autocompletion.Core</AssemblyName>
+    <RootNamespace>Autocompletion.Interfaces</RootNamespace>
+    <AssemblyName>Autocompletion.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,15 +33,7 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Item.cs" />
-    <Compile Include="ItemTrie.cs" />
-    <Compile Include="Trie.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Autocompletion.Interfaces\Autocompletion.Interfaces.csproj">
-      <Project>{95c10720-2f21-4d8c-bec3-46f457535266}</Project>
-      <Name>Autocompletion.Interfaces</Name>
-    </ProjectReference>
+    <Compile Include="IAutocompletionSource.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

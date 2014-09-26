@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.Core", "Auto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.Test", "Autocompletion.Test\Autocompletion.Test.csproj", "{9FEB14F5-5636-4D24-9EAE-55235D226AF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.Interfaces", "Autocompletion.Interfaces\Autocompletion.Interfaces.csproj", "{95C10720-2F21-4D8C-BEC3-46F457535266}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{9FEB14F5-5636-4D24-9EAE-55235D226AF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9FEB14F5-5636-4D24-9EAE-55235D226AF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9FEB14F5-5636-4D24-9EAE-55235D226AF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95C10720-2F21-4D8C-BEC3-46F457535266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C10720-2F21-4D8C-BEC3-46F457535266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C10720-2F21-4D8C-BEC3-46F457535266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C10720-2F21-4D8C-BEC3-46F457535266}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
