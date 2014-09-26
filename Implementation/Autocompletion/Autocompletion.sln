@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.Test", "Auto
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.Interfaces", "Autocompletion.Interfaces\Autocompletion.Interfaces.csproj", "{95C10720-2F21-4D8C-BEC3-46F457535266}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.TCP", "Autocompletion.TCP\Autocompletion.TCP.csproj", "{722E62B2-E920-4F2D-A28E-33C275A17CD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.TCP.ServerEnvironment", "Autocompletion.TCP.ServerEnvironment\Autocompletion.TCP.ServerEnvironment.csproj", "{C253AC41-53DC-4F6B-91D9-0706A3DC7FBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,14 @@ Global
 		{95C10720-2F21-4D8C-BEC3-46F457535266}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95C10720-2F21-4D8C-BEC3-46F457535266}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95C10720-2F21-4D8C-BEC3-46F457535266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{722E62B2-E920-4F2D-A28E-33C275A17CD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{722E62B2-E920-4F2D-A28E-33C275A17CD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{722E62B2-E920-4F2D-A28E-33C275A17CD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{722E62B2-E920-4F2D-A28E-33C275A17CD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C253AC41-53DC-4F6B-91D9-0706A3DC7FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C253AC41-53DC-4F6B-91D9-0706A3DC7FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C253AC41-53DC-4F6B-91D9-0706A3DC7FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C253AC41-53DC-4F6B-91D9-0706A3DC7FBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
