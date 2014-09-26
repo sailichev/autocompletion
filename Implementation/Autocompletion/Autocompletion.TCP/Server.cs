@@ -90,7 +90,7 @@
 						var prefix = readString.Substring(Command.Length);
 						var result = this.autocompletionSource.GetStrings(prefix);
 
-						var writeBuf = Encoding.GetBytes(string.Join(NewLine, result));
+						var writeBuf = Encoding.GetBytes(string.Join(NewLine, result) + NewLine);
 						stream.Write(writeBuf, 0, writeBuf.Length);
 					}
 				}
