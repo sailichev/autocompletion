@@ -57,6 +57,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Core\TrieTest.cs" />
+    <Compile Include="TCP\ClientServertTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Autocompletion.Core\Autocompletion.Core.csproj">
@@ -67,12 +68,17 @@
       <Project>{95c10720-2f21-4d8c-bec3-46f457535266}</Project>
       <Name>Autocompletion.Interfaces</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Autocompletion.TCP\Autocompletion.TCP.csproj">
+      <Project>{722e62b2-e920-4f2d-a28e-33c275a17cd8}</Project>
+      <Name>Autocompletion.TCP</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\Specification\test.in">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
