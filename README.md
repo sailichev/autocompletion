@@ -1,5 +1,7 @@
 Autocompletion
---------------
+==============
 
-**Постановка** задачи на русском языке в папке Specification.  
-**Реализация** в папке Implementation.
+High-performance word completion algorithm.
+-------------------------------------------
+
+**Technical requirements** are in Specification folder. Attention!! Russian language =)
