@@ -77,6 +77,11 @@
 				using (var client2 = new Client("localhost", port))
 				using (var client3 = new Client("localhost", port))
 				using (var client4 = new Client("localhost", port))
+				using (var client5 = new Client("localhost", port))
+				using (var client6 = new Client("localhost", port))
+				using (var client7 = new Client("localhost", port))
+				using (var client8 = new Client("localhost", port))
+				using (var client9 = new Client("localhost", port))
 				{
 					var timer = Stopwatch.StartNew();
 
@@ -86,11 +91,16 @@
 						client2.GetStrings(a);
 						client3.GetStrings(a);
 						client4.GetStrings(a);
+						client5.GetStrings(a);
+						client6.GetStrings(a);
+						client7.GetStrings(a);
+						client8.GetStrings(a);
+						client9.GetStrings(a);
 					}
 
 					timer.Stop();
 
-					Assert.IsTrue(timer.Elapsed.Milliseconds <= 500 * 4, "operation takes longer than half a second per client on the test data");
+					Assert.IsTrue(timer.Elapsed.Milliseconds <= 500 * 9, "operation takes longer than half a second per client on the test data");
 				}		
 		}
 	}
