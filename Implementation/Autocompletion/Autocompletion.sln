@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.TCP.ServerEn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.TCP.ClientEnvironment", "Autocompletion.TCP.ClientEnvironment\Autocompletion.TCP.ClientEnvironment.csproj", "{4F0DC69A-7A20-4A58-B27A-7590FDB3DBFC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Autocompletion.Pipe", "Autocompletion.Pipe\Autocompletion.Pipe.csproj", "{1AA3F02A-0615-43FC-BC3F-2C36142B9BC7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{4F0DC69A-7A20-4A58-B27A-7590FDB3DBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F0DC69A-7A20-4A58-B27A-7590FDB3DBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F0DC69A-7A20-4A58-B27A-7590FDB3DBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA3F02A-0615-43FC-BC3F-2C36142B9BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA3F02A-0615-43FC-BC3F-2C36142B9BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA3F02A-0615-43FC-BC3F-2C36142B9BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA3F02A-0615-43FC-BC3F-2C36142B9BC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

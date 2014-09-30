@@ -1,0 +1,1 @@
+Autocompletion.Pipe.exe < ..\..\..\..\..\Specification\test.in > result.txt
