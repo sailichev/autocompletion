@@ -19,7 +19,7 @@
 			var res = -this.Relevancy.CompareTo(other.Relevancy);
 			
 			if (res == 0)
-				res = this.Value.CompareTo(other.Value);
+				res = string.CompareOrdinal(this.Value, other.Value); //this.Value.CompareTo(other.Value);
 
 			return res;
 		}
